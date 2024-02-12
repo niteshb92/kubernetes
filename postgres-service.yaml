@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: db
   labels:
-    name: postgress-service
+    name: postgres-service
     app: demo-voting-app
 spec:
   selector:
-    name: postgress-pod
+    name: postgres-pod
     app: demo-voting-app
   ports:
   - port: 5432
